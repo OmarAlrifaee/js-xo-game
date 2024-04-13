@@ -1,0 +1,72 @@
+*{
+      margin: 0;
+      padding: 0;
+      border-radius: 10px;
+}
+
+body{
+      height: 100vh;
+      background-color: #123;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+
+.container{
+      padding: 20px;
+      background-color: yellow;
+      box-shadow: 0 0 10px white;
+      display: grid;
+      grid-template-columns: repeat(3, 150px);
+      grid-template-rows: 60px repeat(3, 150px);
+      justify-content: center;
+      align-content: center;
+      gap: 10px;
+}
+
+.title{
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 20px;
+      background-color: pink;
+      box-shadow: 0 0 5px black;
+      font-size: 1.5em;
+}
+
+.square{
+      font-size: 100px;
+      text-transform: uppercase;
+      background-color: pink;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      box-shadow: 0 0 5px black;
+      transition: background-color 0.5s;
+      cursor: pointer;
+}
+
+.square:hover{
+      background-color: black;
+}
+
+span{
+      text-transform: uppercase;
+}
+
+.x-o{
+      color: white;
+      text-transform: uppercase;
+}
+.winner{
+      color: red;
+      text-transform: uppercase;
+
+}
+
+.black-background{
+      background-color: black;
+}
+
